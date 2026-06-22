@@ -88,11 +88,11 @@ export default function Resume() {
 
         {/* PDF Viewer */}
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }} className="resume-inline-style-020">
-          <iframe src="../../../public/Sal_Resume.pdf" title="Resume" className="resume-inline-style-021" />
+          <iframe src="/Sal_Resume.pdf" title="Resume" className="resume-inline-style-021" />
         </motion.div>
 
         {/* Download Button */}
-        <motion.a href="../../../public/Sal_Resume.pdf" download whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="resume-download">
+        <motion.a href="/Sal_Resume.pdf" download whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="resume-download">
           ⬇️ Download Resume
         </motion.a>
 
