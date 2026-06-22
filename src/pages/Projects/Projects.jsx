@@ -7,7 +7,7 @@ const PROJECTS = [
    {
     title: '🩺 Healthcare Website',
     desc: 'Modern responsive healthcare website built with HTML, CSS, Bootstrap, JavaScript, and React for seamless patient experience.',
-    ss: '/public/three.png',
+    ss: '../../../public/three.png',
     tech: ['Bootstrap', 'React', "CSS"],
     live: 'https://healthcare-frontend-website.vercel.app/',
     code: 'https://github.com/salmanabbas07/Healthcare_Frontend_website'
@@ -15,7 +15,7 @@ const PROJECTS = [
   {
     title: '📝 TODO Web App',
     desc: 'Interactive TODO web application built with HTML, CSS, and JavaScript featuring user-friendly interface and responsive design.',
-    ss: '/one.png',
+    ss: '../../../public/one.png',
     tech: ['HTML', 'CSS', 'JavaScript'],
     live: '#',
     code: '#'
@@ -23,7 +23,7 @@ const PROJECTS = [
   {
     title: '📇 Address Card Generator',
     desc: 'Interactive address card maker with modern design, copy-to-clipboard, download PDF, and responsive preview using Javascript.',
-    ss: '/maker-card.png',
+    ss: '../../../public/maker-card.png',
     tech: ['HTML', 'CSS', 'JavaScript'],
     live: '#',
     code: '#'
@@ -31,7 +31,7 @@ const PROJECTS = [
   {
     title: '💼 Portfolio Website',
     desc: 'A modern and responsive portfolio built with React and Framer Motion, showcasing projects, skills, and achievements with smooth animations and interactive UI.',
-    ss: '/portfolio.jpg',
+    ss: '../../../public/portfolio.jpg',
     tech: ['React', 'Framer Motion', 'Tailwind CSS'],
     live: '#',
     code: '#'
