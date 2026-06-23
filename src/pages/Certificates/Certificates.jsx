@@ -73,9 +73,9 @@ export default function Certificates() {
 
         {/* Certificates Grid */}
         <div className="certs-grid certs-inline-style-007">
-          <AnimatePresence mode="wait">
+          <AnimatePresence>
             {CERTS[tab].map((c, idx) => (
-              <motion.div key={c.title} className="cert card certs-inline-style-008" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.4, delay: idx * 0.1 }} whileHover={{ scale: 1.03, boxShadow: "0 0 15px rgba(0, 123, 255, 0.4)" }}>
+              <motion.div key={`${tab}-${idx}`} className="cert card certs-inline-style-008" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.4, delay: idx * 0.1 }} whileHover={{ scale: 1.03, boxShadow: "0 0 15px rgba(0, 123, 255, 0.4)" }}>
                 <img src={c.img} alt={c.title} className="certs-inline-style-009" />
                 <strong className="certs-inline-style-010">{c.title}</strong>
                 <div className="muted certs-inline-style-011">{c.org} • {c.date}</div>
