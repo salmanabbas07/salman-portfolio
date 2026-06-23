@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 
 import githubLogo from "/github.png";
 import linkedinLogo from "/linkedin.png";
@@ -18,6 +18,35 @@ export default function Contact() {
     message: "",
   });
   const [status, setStatus] = useState("");
+
+  // Initialize EmailJS with public key
+  useEffect(() => {
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+
+    console.log("=== EmailJS Configuration Debug ===");
+    console.log("Public Key:", publicKey);
+    console.log("Service ID:", serviceId);
+    console.log("Template ID:", templateId);
+
+    // Check for placeholder values
+    const isPlaceholder = (value) => !value || value === "your_key" || value.includes("your_") || value.includes("YOUR_");
+
+    if (isPlaceholder(publicKey) || isPlaceholder(serviceId) || isPlaceholder(templateId)) {
+      console.error("❌ EmailJS is using placeholder values. Please configure real credentials in .env file:");
+      if (isPlaceholder(publicKey)) console.error("  - VITE_EMAILJS_PUBLIC_KEY is missing or invalid");
+      if (isPlaceholder(serviceId)) console.error("  - VITE_EMAILJS_SERVICE_ID is missing or invalid");
+      if (isPlaceholder(templateId)) console.error("  - VITE_EMAILJS_TEMPLATE_ID is missing or invalid");
+    }
+
+    if (publicKey && !isPlaceholder(publicKey)) {
+      emailjs.init(publicKey);
+      console.log("✅ EmailJS initialized successfully");
+    } else {
+      console.error("❌ EmailJS initialization failed: Invalid or missing public key");
+    }
+  }, []);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -40,25 +69,47 @@ export default function Contact() {
 
     setStatus("Sending...");
 
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+
+    console.log("=== Sending Email ===");
+    console.log("Service ID:", serviceId);
+    console.log("Template ID:", templateId);
+    console.log("Form Data:", {
+      from_name: form.name,
+      contact_info: form.contact,
+       
+      subject: form.subject,
+      message: form.message,
+    });
+
+    // Validate credentials before sending
+    const isPlaceholder = (value) => !value || value === "your_key" || value.includes("your_") || value.includes("YOUR_");
+    if (isPlaceholder(serviceId) || isPlaceholder(templateId)) {
+      console.error("❌ Cannot send email: EmailJS credentials are not configured");
+      setStatus("❌ EmailJS not configured. Please check .env file.");
+      return;
+    }
+
     emailjs
-      .send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          contact_info: form.contact,
-          subject: form.subject,
-          message: form.message,
-        },
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      )
+      .send(serviceId, templateId, {
+        from_name: form.name,
+        contact_info: form.contact,
+        subject: form.subject,
+        message: form.message,
+      })
       .then(
-        () => {
+        (response) => {
+          console.log("Email sent successfully!", response);
           setStatus("✅ Message sent successfully!");
           setForm({ name: "", contact: "", subject: "", message: "" });
         },
         (error) => {
-          console.error("FAILED...", error);
+          console.error("EmailJS error:", error);
+          console.error("Error details:", {
+            text: error.text,
+            status: error.status,
+          });
           setStatus("❌ Failed to send. Try again later.");
         }
       );
