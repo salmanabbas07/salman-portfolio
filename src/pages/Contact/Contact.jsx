@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
 
-import githubLogo from "../../../public/github.png";
-import linkedinLogo from "../../../public/linkedin.png";
-import gmailLogo from "../../../public/gmail.png";
-import whatsappLogo from "../../../public/whatsapp.png";
+import githubLogo from "/github.png";
+import linkedinLogo from "/linkedin.png";
+import gmailLogo from "/gmail.png";
+import whatsappLogo from "/whatsapp.png";
 
 import "./Contact.css"
 import '../../index.css' 

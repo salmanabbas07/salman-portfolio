@@ -4,11 +4,11 @@ import "./Home.css"
 import '../../../src/index.css'
 
 // 🖼️ Import Assets
-import photo from '../../../public/dp.jpeg'
-import githubLogo from '../../../public/github.png'
-import linkedinLogo from '../../../public/linkedin.png'
-import gmailLogo from '../../../public/gmail.png'
-import whatsappLogo from '../../../public/whatsapp.png'
+import photo from '/dp.jpeg'
+import githubLogo from '/github.png'
+import linkedinLogo from '/linkedin.png'
+import gmailLogo from '/gmail.png'
+import whatsappLogo from '/whatsapp.png'
 
 export default function Home() {
   const professions = ['Full Stack Developer', 'UI Designer', 'Deep Learning Expert', 'Programmer', 'Web App Creator', 'Frontend Developer']
