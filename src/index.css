@@ -625,3 +625,40 @@ form h3 {
   background-color: #ff4c4c;
   color: #0b0e14;
 }
+
+
+@media (min-width: 300px) and (max-width: 440px)
+{
+    .app-main{
+      /* border: 1px solid red; */
+      width: 150% !important;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 900px)
+{
+    .home-info{
+      align-items: center;
+      /* justify-content: center; */
+    }
+
+    .profession-tags{
+      /* border: 1px solid red; */
+      justify-content: center;
+      
+    }
+
+    .info-cards{
+
+      /* border: 1px solid red; */
+      justify-content: center;
+
+    }
+
+    .typing-effect span{
+
+      display: none;
+      
+    }
+
+}

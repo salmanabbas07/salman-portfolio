@@ -143,6 +143,9 @@
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(10px);
     font-family: inherit;
+    /* height: 100vh !important; */
+    /* border: 1px solid red;
+    width: 100% !important; */
 }
 
 .navbar-inline-style-002 {
@@ -283,6 +286,7 @@
     align-items: flex-start;
     padding-top: 5rem;
     border-right: 1px solid rgba(255, 255, 255, 0.1);
+    /* border: 1px solid red; */
   }
 
   .navbar-inline-style-013 {
@@ -293,6 +297,16 @@
 
 @media (max-width: 600px) {
   .navbar-inline-style-011 {
-    width: 60% !important;
+    width: 55% !important;
+    height: 150vh !important;
   }
+}
+
+
+@media (min-width: 300px) and (max-width: 440px)
+{
+    .navbar-inline-style-001{
+        width: 150% !important;
+        /* border: 1px solid red !important; */
+    }
 }

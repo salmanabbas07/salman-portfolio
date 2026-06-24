@@ -12,6 +12,8 @@
   padding: 3rem 2rem 1rem;
   background: radial-gradient(circle at 30% 30%, rgba(0,255,200,0.08), transparent 80%);
   color: #fff;
+  /* border: 1px solid red;
+  width: 150% !important; */
 }
 
 .home-top {
@@ -69,4 +71,47 @@
   display: flex;
   gap: 1.5rem;
   justify-content: center; /* ensures icons are centered */
+}
+
+
+@media (min-width: 300px) and (max-width: 440px)
+{
+   
+
+    .home-info{
+      align-items: center;
+      /* justify-content: center; */
+    }
+
+    .profession-tags{
+      /* border: 1px solid red; */
+      justify-content: center;
+      
+    }
+
+    .info-cards{
+
+      /* border: 1px solid red; */
+      justify-content: center;
+
+    }
+
+    .footer{
+      /* border: 1px solid red; */
+      width: 150%;
+    }
+
+    .typing-effect{
+      display: none;
+    }
+
+    /* .typing-effect{
+      width: 300px !important;
+      border: 1px solid red;
+      height: 15vh !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+    } */
 }

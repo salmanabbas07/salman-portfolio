@@ -39,7 +39,7 @@ export default function Home() {
             </motion.span>
           </h1>
           {/* Typing Animated Text */}
-          <p className="typing-effect">WEB DEVELOPMENT | MERN STACK DEVELOPER | UI DEVELOPMENT</p>
+          <p className="typing-effect"><span>WEB DEVELOPMENT |</span> <span>MERN STACK DEVELOPER |</span> <span>UI DEVELOPMENT </span></p>
           {/* Profession Tags */}
           <motion.div className="profession-tags">
             {professions.map((role, i) => (
