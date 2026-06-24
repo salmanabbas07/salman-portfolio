@@ -254,59 +254,90 @@
 
 
 .desktop-links {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  align-items: center;
-  flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    flex-grow: 1;
 }
 
 .mobile-btn {
-  display: none;
+    display: none;
 }
 
-@media (max-width: 900px) {
-  .desktop-links {
-    display: none !important;
-  }
+/* responsive - 450px to 900px */
+@media (min-width: 450px) and (max-width: 900px) {
+    .desktop-links {
+        display: none !important;
+    }
 
-  .mobile-btn {
-    display: block !important;
-  }
+    .mobile-btn {
+        display: block !important;
+    }
 
-  .navbar-inline-style-011 {
-    width: 40% !important;
-    height: 100vh !important;
-    right: 0;
-    top: 0;
-    left: auto;
-    background: rgba(0, 0, 0, 0.25) !important;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    align-items: flex-start;
-    padding-top: 5rem;
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
-    /* border: 1px solid red; */
-  }
+    .navbar-inline-style-011 {
+        width: 40% !important;
+        height: 100vh !important;
+        right: 0;
+        top: 0;
+        left: auto;
+        background: rgba(0, 0, 0, 0.25) !important;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        align-items: flex-start;
+        padding-top: 5rem;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
 
-  .navbar-inline-style-013 {
-    text-align: left;
-    padding-left: 2rem;
-  }
+    .navbar-inline-style-013 {
+        text-align: left;
+        padding-left: 2rem;
+    }
 }
 
-@media (max-width: 600px) {
-  .navbar-inline-style-011 {
-    width: 55% !important;
-    height: 150vh !important;
-  }
-}
+/* responsive - 300px to 450px */
+@media (min-width: 300px) and (max-width: 450px) {
+    .desktop-links {
+        display: none !important;
+    }
 
+    .mobile-btn {
+        display: block !important;
+    }
 
-@media (min-width: 300px) and (max-width: 440px)
-{
-    .navbar-inline-style-001{
-        width: 150% !important;
-        /* border: 1px solid red !important; */
+    .navbar-inline-style-011 {
+        width: 70% !important;
+        height: 100vh !important;
+        right: 0;
+        top: 0;
+        left: auto;
+        background: rgba(0, 0, 0, 0.25) !important;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        align-items: flex-start;
+        padding-top: 5rem;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-inline-style-013 {
+        text-align: left;
+        padding-left: 1.5rem;
+        font-size: 14px;
+    }
+
+    .nav {
+        padding: 12px 16px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-name h1 {
+        font-size: 12px;
+    }
+
+    .nav-tagline {
+        font-size: 10px;
     }
 }
