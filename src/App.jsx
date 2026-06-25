@@ -9,6 +9,7 @@ import About from './pages/About/About'
 import Contact from './pages/Contact/Contact'
 import NotFound from './pages/NotFound/NotFound'
 import SkillNetwork from './pages/Skills/Skills'
+import Main from './pages/Main/Main'
 
 export default function App() {
   return (
@@ -16,7 +17,8 @@ export default function App() {
       <Navbar />
       <main className="app-main">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Main />} />
+          <Route path="/home" element={<Main />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/skills" element={<SkillNetwork />} />
           <Route path="/certificates" element={<Certificates />} />
