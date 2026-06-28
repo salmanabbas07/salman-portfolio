@@ -13,12 +13,12 @@ const PROJECTS = [
     code: 'https://github.com/salmanabbas07/Healthcare_Frontend_website'
   },
   {
-    title: '📝 TODO Web App',
+    title: '📝 Contact Management System',
     desc: 'Interactive TODO web application built with HTML, CSS, and JavaScript featuring user-friendly interface and responsive design.',
     ss: '/one.png',
     tech: ['HTML', 'CSS', 'JavaScript'],
-    live: '#',
-    code: '#'
+    live: 'https://contact-management-system-iota-tawny.vercel.app/',
+    code: 'https://github.com/salmanabbas07/contact-management-system'
   },
   {
     title: '📇 Address Card Generator',
