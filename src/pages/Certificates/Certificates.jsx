@@ -35,7 +35,7 @@ const CERTS = {
       link: "/certs/sTp.png",
     },
 
-     {
+    {
       title: "Oxford Software institute",
       org: "MERN Full Stack Development",
       date: "2026",
@@ -43,7 +43,7 @@ const CERTS = {
       link: "/certs/oxcm.jpeg",
     },
 
-    
+
   ],
   other: [
     {
