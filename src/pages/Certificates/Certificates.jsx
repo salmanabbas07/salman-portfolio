@@ -26,6 +26,24 @@ const CERTS = {
       img: "/certs/e.jpeg",
       link: "/certs/e.jpeg",
     },
+
+    {
+      title: "STP Eduction",
+      org: "Web Development",
+      date: "2025",
+      img: "/certs/sTp.png",
+      link: "/certs/sTp.png",
+    },
+
+     {
+      title: "Oxford Software institute",
+      org: "MERN Full Stack Development",
+      date: "2026",
+      img: "/certs/oxcm.jpeg",
+      link: "/certs/oxcm.jpeg",
+    },
+
+    
   ],
   other: [
     {

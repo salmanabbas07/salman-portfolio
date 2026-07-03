@@ -21,12 +21,12 @@ const PROJECTS = [
     code: 'https://github.com/salmanabbas07/contact-management-system'
   },
   {
-    title: '📇 Address Card Generator',
+    title: '📇 Info Card Generator',
     desc: 'Interactive address card maker with modern design, copy-to-clipboard, download PDF, and responsive preview using Javascript.',
     ss: '/maker-card.png',
     tech: ['HTML', 'CSS', 'JavaScript'],
-    live: '#',
-    code: '#'
+    live: 'https://card-maker-inky.vercel.app/',
+    code: 'https://github.com/salmanabbas07/card-maker'
   },
   {
     title: '💼 Portfolio Website',
