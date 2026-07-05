@@ -36,6 +36,15 @@ const PROJECTS = [
     live: 'https://salman-portfolio-three.vercel.app/',
     code: 'https://github.com/salmanabbas07/salman-portfolio'
   },
+
+  {
+  title: '🧮 Calculator',
+  desc: 'A simple and responsive calculator built with HTML, JavaScript, and Custom CSS. It performs basic arithmetic operations with a clean interface and smooth user experience.',
+  ss: '/calcc.jpg',
+  tech: ['HTML', 'JavaScript', 'Custom CSS'],
+  live: 'https://calculator-kappa-ten-51.vercel.app/',
+  code: 'https://github.com/salmanabbas07/Calculator'
+},
 ]
 
 export default function Projects() {
