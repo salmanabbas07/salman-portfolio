@@ -45,6 +45,19 @@ const PROJECTS = [
   live: 'https://calculator-kappa-ten-51.vercel.app/',
   code: 'https://github.com/salmanabbas07/Calculator'
 },
+
+{
+  title: '🛒 ElectraX',
+  desc: 'A full-stack MERN e-commerce platform built to simulate a real-world online shopping experience, featuring dynamic product listings, search filters, and responsive design.',
+  ss: '/fullX.png',
+  tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
+  live: 'https://electra-x-three.vercel.app/',
+  code: 'https://github.com/salmanabbas07/ElectraX'
+},
+
+
+
+
 ]
 
 export default function Projects() {
