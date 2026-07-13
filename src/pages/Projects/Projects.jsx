@@ -56,6 +56,15 @@ const PROJECTS = [
 },
 
 
+{
+  title: '💬 Real-Time Chat App',
+  desc: 'A full-stack real-time messaging application built with Socket.IO. Features include instant messaging, live typing indicators, global chat rooms, and persistent message history using SQLite.',
+  ss: '/chat-app,jpg',
+  tech: ['React.js', 'Node.js', 'Express.js', 'Socket.IO', 'SQLite'],
+  live: 'https://react-socketio-chat.vercel.app/',
+  code: 'https://github.com/salmanabbas07/react-socketio-chat'
+},
+
 
 
 ]
