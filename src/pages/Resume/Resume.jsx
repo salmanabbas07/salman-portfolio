@@ -88,7 +88,15 @@ export default function Resume() {
 
         {/* PDF Viewer */}
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }} className="resume-inline-style-020">
-          <iframe src="/salman_resume.pdf" title="Resume" className="resume-inline-style-021" />
+          <iframe 
+            src={
+              typeof window !== "undefined" && (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1")
+                ? "/salman_resume.pdf"
+                : `https://docs.google.com/gview?url=${encodeURIComponent(window.location.origin + "/salman_resume.pdf")}&embedded=true`
+            } 
+            title="Resume" 
+            className="resume-inline-style-021" 
+          />
         </motion.div>
 
         {/* Download Button */}

@@ -273,3 +273,10 @@
   border: none;
   background: #111;
 }
+
+/* Adjust PDF iframe height on mobile screens to fit viewport beautifully */
+@media (max-width: 768px) {
+  .resume-inline-style-021 {
+    height: 480px !important;
+  }
+}
