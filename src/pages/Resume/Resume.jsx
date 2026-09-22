@@ -87,7 +87,16 @@ export default function Resume() {
         </motion.div>
 
         {/* PDF Viewer */}
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }} className="resume-inline-style-020">
+
+         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }} className="resume-inline-style-020">
+          <iframe 
+            src="/Resume_2026.pdf" 
+            title="Resume" 
+            className="resume-inline-style-021" 
+          />
+        </motion.div>
+        
+        {/* <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }} className="resume-inline-style-020">
           <iframe 
             src={
               typeof window !== "undefined" && (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1")
@@ -97,7 +106,7 @@ export default function Resume() {
             title="Resume" 
             className="resume-inline-style-021" 
           />
-        </motion.div>
+        </motion.div> */}
         {/* Download Button */}
         <motion.a href="/Resume_2026.pdf" download whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="resume-download">
           ⬇️ Download Resume
