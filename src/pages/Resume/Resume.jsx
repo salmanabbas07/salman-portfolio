@@ -91,8 +91,8 @@ export default function Resume() {
           <iframe 
             src={
               typeof window !== "undefined" && (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1")
-                ? "/salman_resume.pdf"
-                : `https://docs.google.com/gview?url=${encodeURIComponent(window.location.origin + "/salman_resume.pdf")}&embedded=true`
+                ? "/Salman_Resume.pdf"
+                : `https://docs.google.com/gview?url=${encodeURIComponent(window.location.origin + "/Salman_Resume.pdf")}&embedded=true`
             } 
             title="Resume" 
             className="resume-inline-style-021" 
@@ -100,7 +100,7 @@ export default function Resume() {
         </motion.div>
 
         {/* Download Button */}
-        <motion.a href="/salman_resume.pdf" download whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="resume-download">
+        <motion.a href="/Salman_Resume.pdf" download whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="resume-download">
           ⬇️ Download Resume
         </motion.a>
 
