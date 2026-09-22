@@ -35,7 +35,7 @@ export default function Home() {
           <h1 className="home-title">
             Hi, I’m{' '}
             <motion.span animate={{ backgroundPositionX: ['0%', '200%'] }} transition={{ duration: 4, repeat: Infinity, ease: 'linear' }} className="home-name">
-              SALMAN
+              SALMAN ABBAS
             </motion.span>
           </h1>
           {/* Typing Animated Text */}
