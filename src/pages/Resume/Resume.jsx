@@ -98,7 +98,6 @@ export default function Resume() {
             className="resume-inline-style-021" 
           />
         </motion.div>
-
         {/* Download Button */}
         <motion.a href="/Resume_2026.pdf" download whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="resume-download">
           ⬇️ Download Resume
@@ -107,5 +106,6 @@ export default function Resume() {
 
       </motion.div>
     </section>
+  
   );
 }
