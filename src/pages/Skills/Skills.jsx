@@ -20,23 +20,96 @@ const SKILLS = [
   { name: "GitHub", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
   { name: "Router", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/reactrouter/reactrouter-original.svg" },
   { name: "Swiper", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swiper/swiper-original.svg" },
+  { name: "TypeScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+  { name: "Next.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
+  { name: "Socket.IO", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" },
+  { name: "MUI", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" },
+  { name: "Postman", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" },
+  { name: "Vercel", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" },
+
 ];
 
 const ROWS = [
   [
-    { title: "Web Technologies", items: ["HTML", "CSS", "JavaScript", "React JS", "Wordpress"] },
-    { title: "Databases & Tools", items: ["MySQL", "MongoDB", "Git", "Postman", "VScode", "Github"] },
-    { title: "Frameworks & Libraries", items: ["Tailwind CSS", "Redux-Toolkit", "Node JS", "Express JS", "Bootstrap", "Framer Motion", "Mongoose"] },
+    {
+      title: "Frontend Development",
+      items: [
+        "HTML5 & CSS3",
+        "JavaScript (ES6+)",
+        "TypeScript",
+        "React.js & Next.js (Basic)",
+        "Redux Toolkit",
+        "Tailwind CSS & Bootstrap",
+        "Material UI (MUI)",
+        "Framer Motion",]
+    },
+
+
+    {
+      title: "Backend Development",
+      items: [
+        "Node.js & Express.js",
+        "RESTful API Development",
+        "Authentication (JWT & OAuth)",
+        "Real-Time with Socket.IO",
+        "API Optimization & Caching",
+        "Middleware & Error Handling",]
+    },
+
+    {
+      title: "Databases & Storage",
+      items: [
+        "MongoDB & Mongoose ODM",
+        "SQL / MySQL (Basics)",
+        "Database Schema Modeling",
+        "Query Optimization & Indexing",
+        "Aggregation Pipelines",]
+    },
   ],
   [
     {
-      title: "Core Concepts",
-      items: ["React Hooks & State Management", "Component Architecture", "Responsive Design Principles", "Performance Optimization", "React Router Navigation"],
+      title: "DevOps & Tools",
+      items: ["Git (Version Control)",
+        "GitHub (Collaboration & PRs)",
+        "Postman (API Testing)",
+        "Vite (Build Tool)",
+        "Vercel & Netlify Deployment",],
     },
+
     {
-      title: "Soft Skills",
-      items: ["Teamwork", "Problem Solving", "Creativity", "Communication", "Fast Learner"],
+      title: "IDE & Platforms",
+      items: ["VS Code",
+        "Antigravity IDE",
+        "Chrome DevTools",
+        "npm / pnpm / yarn",],
     },
+
+    {
+      title: "Core Concepts",
+      items: [
+        "React Hooks & State Architecture",
+        "Component Lifecycle & Memoization",
+        "Asynchronous JS & Event Loop",
+        "MVC Architecture Pattern",
+        "Web Performance & Lazy Loading",
+        "Responsive & Mobile-First Design",
+      ],
+    },
+
+
+    {
+      title: "Soft Skills & Work Ethics",
+      items: [
+        "Problem Solving & Analytical Thinking",
+        "Team Collaboration & Code Reviews",
+        "Effective Communication",
+        "Fast Learner & Adaptability",
+        "Clean Code & DRY Principles",
+      ],
+    },
+
+
+    
   ],
 ];
 
